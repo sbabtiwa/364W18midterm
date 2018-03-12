@@ -1,5 +1,4 @@
 <h1> ** SI 364 Midterm Winter 2018 ** </h1>
-<h2> ** Name: ** Sanika Babtiwale </h2>
 
 <h3> ** Project Description: ** This application utilizes an API called Weather Underground (https://www.wunderground.com/weather/api/) to find weather information for U.S. cities. It provides a 3-day forecast, allows a user to search for cities they have saved under a particular state, and view a general list of all the cities they have entered in the database so far. </h3> 
 
