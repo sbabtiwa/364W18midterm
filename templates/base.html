@@ -1,0 +1,15 @@
+{% block content %}
+
+Welcome to this website to find weather information for U.S. cities!
+
+{% endblock %}
+
+<p>------------</p>
+<h3>Navigation</h3>
+<ul>
+	<li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('city_form_display') }}">City entry form</a></li>
+    <li><a href="{{ url_for('state_form') }}">Search for saved cities under a state </a></li>
+    <li><a href="{{ url_for('all_cities') }}">See cities entered</a></li>
+</ul>
+

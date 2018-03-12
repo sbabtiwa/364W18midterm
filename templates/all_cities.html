@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Cities Entered</h1>
+
+{% for c in cities  %}
+    <p>{{ c.cityname }}</p>
+
+	
+	
+{% endfor %}
+
+
+{% endblock %}

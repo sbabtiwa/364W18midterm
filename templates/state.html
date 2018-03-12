@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<head>
+ 	<title>Form for State Entry</title>
+</head>
+<body>
+  <h1>State Entry Form</h1>
+    <form action="{{url_for('state_results')}}" method="GET"> 
+      {{ form.hidden_tag() }}
+      <p>{{ form.enter_state.label }}{{ form.enter_state() }}</p>
+      {{ form.submit() }}
+  </form>
+
+{% endblock %}

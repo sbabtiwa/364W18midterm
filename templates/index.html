@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<head>
+ 	<title>Form for City Entry</title>
+</head>
+<body>
+  <h1>City Entry Form</h1>
+  <h2>View the 3-day Forecast!</h2>
+    <form action="{{url_for('city_result')}}" method="POST"> 
+      {{ form.hidden_tag() }}
+      <p>{{ form.city.label }}{{ form.city() }} {{ form.state.label }}{{ form.state() }}</p>
+      {{ form.submit() }}
+  </form>
+
+{% endblock %}
+
+

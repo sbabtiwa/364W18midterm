@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Cities from State {{ state_name }}</h1>
+
+{% for city in cities  %}
+    <p>{{ city.cityname }}</p>
+{% else %}
+	<p> No city found from {{ state_name }} in the database! Try again. </p>
+	
+{% endfor %}
+
+
+{% endblock %}
